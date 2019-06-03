@@ -13,6 +13,8 @@
 		FBEB0FCB22A585090094F3E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBEB0FC922A585090094F3E9 /* LaunchScreen.storyboard */; };
 		FBEB0FD522A585C60094F3E9 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBEB0FD422A585C60094F3E9 /* CloudKit.framework */; };
 		FBEB0FD722A587510094F3E9 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEB0FD622A587510094F3E9 /* Message.swift */; };
+		FBEB0FDB22A5BACD0094F3E9 /* MessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEB0FDA22A5BACD0094F3E9 /* MessageController.swift */; };
+		FBEB0FDE22A5C0060094F3E9 /* MessageListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEB0FDD22A5C0060094F3E9 /* MessageListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		FBEB0FD222A585C10094F3E9 /* CK26BulletinBoard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CK26BulletinBoard.entitlements; sourceTree = "<group>"; };
 		FBEB0FD422A585C60094F3E9 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		FBEB0FD622A587510094F3E9 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		FBEB0FDA22A5BACD0094F3E9 /* MessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageController.swift; sourceTree = "<group>"; };
+		FBEB0FDD22A5C0060094F3E9 /* MessageListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 		FBEB0FBF22A585080094F3E9 /* CK26BulletinBoard */ = {
 			isa = PBXGroup;
 			children = (
+				FBEB0FDF22A5C00D0094F3E9 /*  View Controller */,
+				FBEB0FDC22A5BAD20094F3E9 /* Model Controller */,
 				FBEB0FD922A5B7A00094F3E9 /* Model */,
 				FBEB0FD822A5B78F0094F3E9 /* Resources */,
 				FBEB0FD222A585C10094F3E9 /* CK26BulletinBoard.entitlements */,
@@ -92,6 +98,22 @@
 				FBEB0FD622A587510094F3E9 /* Message.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		FBEB0FDC22A5BAD20094F3E9 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FBEB0FDA22A5BACD0094F3E9 /* MessageController.swift */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		FBEB0FDF22A5C00D0094F3E9 /*  View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FBEB0FDD22A5C0060094F3E9 /* MessageListTableViewController.swift */,
+			);
+			path = " View Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,7 +196,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBEB0FD722A587510094F3E9 /* Message.swift in Sources */,
+				FBEB0FDB22A5BACD0094F3E9 /* MessageController.swift in Sources */,
 				FBEB0FC122A585080094F3E9 /* AppDelegate.swift in Sources */,
+				FBEB0FDE22A5C0060094F3E9 /* MessageListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
