@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		FBEB0FC122A585080094F3E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEB0FC022A585080094F3E9 /* AppDelegate.swift */; };
-		FBEB0FC322A585080094F3E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEB0FC222A585080094F3E9 /* ViewController.swift */; };
 		FBEB0FC622A585080094F3E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBEB0FC422A585080094F3E9 /* Main.storyboard */; };
 		FBEB0FC822A585090094F3E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBEB0FC722A585090094F3E9 /* Assets.xcassets */; };
 		FBEB0FCB22A585090094F3E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBEB0FC922A585090094F3E9 /* LaunchScreen.storyboard */; };
@@ -19,7 +18,6 @@
 /* Begin PBXFileReference section */
 		FBEB0FBD22A585080094F3E9 /* CK26BulletinBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CK26BulletinBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBEB0FC022A585080094F3E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FBEB0FC222A585080094F3E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FBEB0FC522A585080094F3E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FBEB0FC722A585090094F3E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBEB0FCA22A585090094F3E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -44,7 +42,6 @@
 		FBEB0FB422A585080094F3E9 = {
 			isa = PBXGroup;
 			children = (
-				FBEB0FD622A587510094F3E9 /* Message.swift */,
 				FBEB0FBF22A585080094F3E9 /* CK26BulletinBoard */,
 				FBEB0FBE22A585080094F3E9 /* Products */,
 				FBEB0FD322A585C60094F3E9 /* Frameworks */,
@@ -62,13 +59,10 @@
 		FBEB0FBF22A585080094F3E9 /* CK26BulletinBoard */ = {
 			isa = PBXGroup;
 			children = (
+				FBEB0FD922A5B7A00094F3E9 /* Model */,
+				FBEB0FD822A5B78F0094F3E9 /* Resources */,
 				FBEB0FD222A585C10094F3E9 /* CK26BulletinBoard.entitlements */,
-				FBEB0FC022A585080094F3E9 /* AppDelegate.swift */,
-				FBEB0FC222A585080094F3E9 /* ViewController.swift */,
 				FBEB0FC422A585080094F3E9 /* Main.storyboard */,
-				FBEB0FC722A585090094F3E9 /* Assets.xcassets */,
-				FBEB0FC922A585090094F3E9 /* LaunchScreen.storyboard */,
-				FBEB0FCC22A585090094F3E9 /* Info.plist */,
 			);
 			path = CK26BulletinBoard;
 			sourceTree = "<group>";
@@ -79,6 +73,25 @@
 				FBEB0FD422A585C60094F3E9 /* CloudKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FBEB0FD822A5B78F0094F3E9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FBEB0FC022A585080094F3E9 /* AppDelegate.swift */,
+				FBEB0FC722A585090094F3E9 /* Assets.xcassets */,
+				FBEB0FC922A585090094F3E9 /* LaunchScreen.storyboard */,
+				FBEB0FCC22A585090094F3E9 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FBEB0FD922A5B7A00094F3E9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FBEB0FD622A587510094F3E9 /* Message.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,7 +174,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBEB0FD722A587510094F3E9 /* Message.swift in Sources */,
-				FBEB0FC322A585080094F3E9 /* ViewController.swift in Sources */,
 				FBEB0FC122A585080094F3E9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,7 +323,7 @@
 				CODE_SIGN_ENTITLEMENTS = CK26BulletinBoard/CK26BulletinBoard.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4J7B9732LY;
-				INFOPLIST_FILE = CK26BulletinBoard/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CK26BulletinBoard/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,7 +342,7 @@
 				CODE_SIGN_ENTITLEMENTS = CK26BulletinBoard/CK26BulletinBoard.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4J7B9732LY;
-				INFOPLIST_FILE = CK26BulletinBoard/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CK26BulletinBoard/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
